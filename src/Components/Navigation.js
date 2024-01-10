@@ -40,6 +40,13 @@ const Navigation = () => {
 						<Nav className="justify-content-center flex-grow-1 pe-3">
 							<Nav.Link as={Link} className={`${pathname === "/" ? "bg-primary text-white":""} rounded-pill`} to="/">Home</Nav.Link>
 							<Nav.Link as={Link} className={`${pathname.indexOf("strategies") !== -1 ? "bg-primary text-white" : ""} rounded-pill`} to="/strategies">Strategies</Nav.Link>
+							<NavDropdown title="Trainer" className={`${pathname.indexOf("skillstrainer") !== -1 ? "bg-primary text-white" : ""} rounded-pill`}>
+								<NavDropdown.Item className={`${pathname.indexOf("basic-strategy") !== -1 ? "active":""}`} as={Link} to={"/skillstrainer/basic-strategy"}>Basic Strategy</NavDropdown.Item>
+								<NavDropdown.Item className={`${pathname.indexOf("speed-counting") !== -1 ? "active":""}`} as={Link} to={"/skillstrainer/speed-counting"}>Speed Counting</NavDropdown.Item>
+								<NavDropdown.Item className={`${pathname.indexOf("hi-lo") !== -1 ? "active":""}`} as={Link} to={"/skillstrainer/hi-lo"}>Hi-Lo</NavDropdown.Item>
+								<NavDropdown.Item className={`${pathname.indexOf("omega") !== -1 ? "active":""}`} as={Link} to={"/skillstrainer/omega"}>Other CC System</NavDropdown.Item>
+								<NavDropdown.Item className={`${pathname.indexOf("test-out") !== -1 ? "active":""}`} as={Link} to={"/skillstrainer/test-out"}>Test Out</NavDropdown.Item>
+							</NavDropdown>
 							<Nav.Link as={Link} className={`${pathname.indexOf("about") !== -1 ? "bg-primary text-white" : ""} rounded-pill`} to="/about">About</Nav.Link>
 							{/* <NavDropdown
 								title="Dropdown"

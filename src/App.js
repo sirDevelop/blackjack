@@ -8,6 +8,7 @@ import Strategies from './Pages/Strategies'
 import Rules from './Pages/Rules'
 import History from './Pages/History'
 import Footer from './Pages/Footer'
+import SkillsTrainer from './Pages/SkillsTrainer'
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/rules" element={<Rules />} />
             <Route path="/history" element={<History />} />
             <Route path="/strategies" element={<Strategies />} />
+            <Route path="/skillstrainer/:mode" element={<SkillsTrainer />} />
           </Routes>
       </Container>
       <Footer />
